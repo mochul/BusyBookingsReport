@@ -1,6 +1,5 @@
-### Busy Bookings!!
+# Busy Bookings!!
 
-Some text that will have to be edited I guess.
 
 ## Introduction/Background (10 points):
 
