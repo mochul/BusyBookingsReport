@@ -35,6 +35,7 @@ very complex rules governing our logins, calendar, and booking system where both
 we tested the application once again to ensure nothing broke and the new changes were implemented smoothly. When this was not the case, we would roll 
 back the change and start over. 
 
+On the other hand, we mainly utilized unit testing for our whitebox testing. 
 
 Elaborate on the Test Strategy, including whitebox and blackbox testing methods. List various tools used for testing and explain their purpose.
 Provide detailed test cases and their outcomes.
