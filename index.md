@@ -21,7 +21,7 @@ Rationale for AI Tools and Design Patterns: Copilot was useful because it was in
 
 Design Patterns:
 
-Singleton Pattern: Makes sure there is a single instance of .  Thisprevents resource wastage and complexity.
+Singleton Pattern: Makes sure there is a single instance of each class.  This prevents resource wastage and complexity.
 Observer Pattern: Maintains a clear one-to-many relationship between components. For example, when a booking changes, observers (like the calendar UI and business dashboards) are automatically updated.
 Single Responsibility Principle: Ensures each module or class has one well-defined purpose, making code easier to test and refactor. This enhances scalability. 
 
