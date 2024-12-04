@@ -6,6 +6,7 @@ Busy Bookings is a booking application that enables customers to interact with b
 Software Technologies (15 points):
 
 Technologies, Frameworks, and AI Tools:
+</pre>
   Frontend: React
   Backend: Node.js
   Database: SQL
