@@ -1,6 +1,4 @@
 # Busy Bookings!!
-
-
 ## Introduction/Background (10 points):
 
 Busy Bookings is a booking application that enables customers to interact with businesses and allows businesses to manage their schedules, services, and customer appointments. The primary objective is to create a platform where customers can log in, explore various businesses and their availability, and make appointments through an interactive calendar. Furthemore, business administrators can register their businesses, maintain their profiles, manage availability, and oversee all booking activities from a centralized dashboard
@@ -8,22 +6,18 @@ Busy Bookings is a booking application that enables customers to interact with b
 Software Technologies (15 points):
 
 Technologies, Frameworks, and AI Tools:
-
   Frontend: React
   Backend: Node.js
-  Database: MongoDB (NoSQL document database)
+  Database: SQL
   Version Control: GitHub
 
-AI Tools Used:
-  GitHub Copilot: Automated code suggestions and completions directly in the IDE.
-  Claude/GPT: Code generation, debugging advice, and architectural suggestions.
+AI Tools Used: GitHub Copilot, Claude/GPT
 
-Rationale for AI Tools and Design Patterns:
-  Copilot is integrated into the coding environment, giving real-time suggestions and reducing trivial coding tasks. Claude/GPT, conversely, excels at reasoning about complex code blocks, helping to restructure code, improve performance, or debug tricky issues. Their combined usage significantly reduced development time and improved code readability.
+Rationale for AI Tools and Design Patterns: Copilot was useful because it was integrated into the coding environment and allowed to see various options for potential refactors and this helped us work faster. Claude/GPT o-1 preview helped us with code generation and reasoning when adding features. The combined usage of these two tools reduced development time and improved code readability.
 
 Design Patterns:
 
-Singleton Pattern: Makes sure there is a single instance of critical resources.  Thisprevents resource wastage and complexity.
+Singleton Pattern: Makes sure there is a single instance of .  Thisprevents resource wastage and complexity.
 Observer Pattern: Maintains a clear one-to-many relationship between components. For example, when a booking changes, observers (like the calendar UI and business dashboards) are automatically updated.
 Single Responsibility Principle: Ensures each module or class has one well-defined purpose, making code easier to test and refactor. This enhances scalability. 
 
@@ -34,9 +28,9 @@ Functional Requirements:
 User Registration and Authentication:
 
 Users can create accounts with unique usernames and passwords.
-  Users can log in based on their role (customer/business admin).
+  Users can log in based on their role (customer/business).
   The system must reject invalid credentials and maintain session security.
-
+  
 Business Onboarding:
   Business admins can register their businesses with a name, address, and availability.
   Businesses can specify operational hours and services offered.
@@ -51,23 +45,35 @@ Role-Specific Access Control:
   Customers and businesses see different dashboards.
   Business admins can access additional functionalities like availability settings and booking management.
   
-Non-Functional Requirements:
+Non-Functional Requirements: 
+ - BusyBookings hould be able to process multiple requests at the same time without causing noticeable delays for users.
 
-  Performance:
-  The system should handle multiple concurrent requests without significant latency.
-  Scalability:
-  The architecture should support adding more businesses and customers without major restructuring.
-  Usability:
-  Intuitive UI/UX to ensure users can easily find businesses, create bookings, and manage their profiles.
-  Reliability:
-  System should maintain consistent uptime and gracefully handle errors.
+ - BusyBookings should allow the platform to accommodate more businesses and customers in the future without requiring major structural changes.
 
-Design (30 Points):
+ - BusyBookings should allow customers and business owners to locate businesses, create bookings, and manage their profiles.
 
+   Singleton Principle: db_connector.js implements a single instance of the database connection, ensuring consistent and efficient management throughout the application.
+   Observer Principle: React state and Context API are used, enabling components like CreateBookingsPage.jsx and Calendar.js to automatically update in response to state changes.
+   SRP (Single Responsibility Principle): The modular structure in src/Components/ assigns each file a single, clearly defined responsibility, adhering to this principle
+
+MMF 1: Business Onboarding and Profile Management
+	•	Description: Enable business admins to register their businesses, create profiles, and specify services and availability. Allow  businesses to onboard themselves and populate the platform with offerings and make it functional for customers.	
+
+MMF 2: Interactive Booking Calendar for Customers
+	•	Description: Provide customers with an interactive calendar to view availability and book services with selected businesses. This is the core functionality for customers. 
+
+MMF 3: Booking Management Dashboard for Business Admins
+	•	Description: Offer business admins a dashboard to view, manage, and organize bookings, including customer details and booking statuses. Businesses need tools to manage their bookings efficiently. This feature empowers them to handle bookings.
+
+MMF 4: Customer Dashboard
+•	Description: Page where customers can view and manage all bookings they have made. Customers need tools to track and manage their bookings as it would be irresponsible for them to have to navigate to each business page individually. This would allow them to interact with the application in an easy and intuitive manner. 
+
+   
+
+Design (30 Points)
 Present architectural design diagrams.
 Explain your design decisions and their impact.
 Design Patterns Implementation (30 points):
-
 Document the design patterns used, their justification, visual evidence of their usage, and their impact on the project’s structure and maintainability.
 
 ## Testing Strategy, Execution, AI tool analysis (60 points):
@@ -91,7 +97,7 @@ Offer a comparative analysis on the performance, usability, and impact of these 
 
 Challenges:
 
-  Role-Based Control: Ensuring that users with different roles see different features was tricky. The solution involved designing clear user flow logic and robust middleware checks on the backend.
+  Role-Based Control: Ensuring that users with different roles see different features was challenging. It was also difficult to integrate and work with the calender. The solution involved designing clear logic in the backend.
   
   Integrating AI Tools Effectively: Striking a balance between relying on Copilot’s suggestions and maintaining code quality required discipline. Initially, we had code bloat and less-than-ideal suggestions, but we refined prompts and learned when to trust AI recommendations.
   
