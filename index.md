@@ -108,6 +108,7 @@ Challenges:
   Decision Table Testing: Mapping various,complex booking scenarios into decision tables took time, but once done, it streamlined test case generation.
 
 Innovations:
+
   Use of Claude for Complex Testing and Debugging: Claude’s ability to reason about code and offer structured solutions was leveraged, going beyond simple code generation.
   Observer Pattern in Calendar UI: The calendar’s automatic updates with booking changes gave a seamless user experience, distinguishing this project’s approach from simpler static booking pages.
 
@@ -121,7 +122,7 @@ Critically assess the project outcomes relative to the initial objectives and pr
 
 
 Integrate load balancing and caching strategies as user base grows.
-Utilize AI-driven anomaly detection for booking. For example, suspicious patterns or double-booking attempts).
+Utilize AI-driven anomaly detection for booking. For example, suspicious patterns or double-booking attempts.
 Implement a recommendation engine to suggest businesses based on user preferences.
 Implement reminders and notifications through SMS or email, further automating the booking experience.
 Integrate automated load testing tools and performance profiling guided by AI suggestions.
