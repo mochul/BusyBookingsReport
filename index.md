@@ -3,7 +3,7 @@
 
 Busy Bookings is a booking application that enables customers to interact with businesses and allows businesses to manage their schedules, services, and customer appointments. The primary objective is to create a platform where customers can log in, explore various businesses and their availability, and make appointments through an interactive calendar. Furthemore, business administrators can register their businesses, maintain their profiles, manage availability, and oversee all booking activities from a centralized dashboard
 
-Software Technologies (15 points):
+## Software Technologies (15 points):
 
 Technologies, Frameworks, and AI Tools:
 
