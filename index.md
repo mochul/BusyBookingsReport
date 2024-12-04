@@ -34,6 +34,8 @@ It's a technique used to identify the correct test cases for systems with comple
 very complex rules governing our logins, calendar, and booking system where both security and efficiency had to be balanced. After every merge 
 we tested the application once again to ensure nothing broke and the new changes were implemented smoothly. When this was not the case, we would roll 
 back the change and start over. 
+
+
 Elaborate on the Test Strategy, including whitebox and blackbox testing methods. List various tools used for testing and explain their purpose.
 Provide detailed test cases and their outcomes.
 Discuss the AI tools used in blackbox and whitebox testing.
