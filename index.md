@@ -8,8 +8,11 @@ Software Technologies (15 points):
 Technologies, Frameworks, and AI Tools:
 </pre>
   Frontend: React
+</pre>
   Backend: Node.js
+  </pre>
   Database: SQL
+  </pre>
   Version Control: GitHub
 
 AI Tools Used: GitHub Copilot, Claude/GPT
