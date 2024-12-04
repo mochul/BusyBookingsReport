@@ -45,3 +45,8 @@ Critically assess the project outcomes relative to the initial objectives and pr
 
 Suggest potential enhancements or future research opportunities based on your findings.
 Discuss possible improvements to AI tool usage or alternative tools that could be explored.
+
+## Contributions
+| Team Member  | Contribution |
+| ------------- | ------------- |
+| Michael       | Testing   |
