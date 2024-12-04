@@ -9,17 +9,17 @@ Software Technologies (15 points):
 
 Technologies, Frameworks, and AI Tools:
 
-Frontend: React
-Backend: Node.js
-Database: MongoDB (NoSQL document database)
-Version Control: GitHub
+  Frontend: React
+  Backend: Node.js
+  Database: MongoDB (NoSQL document database)
+  Version Control: GitHub
 
 AI Tools Used:
-GitHub Copilot: Automated code suggestions and completions directly in the IDE.
-Claude/GPT: Code generation, debugging advice, and architectural suggestions.
+  GitHub Copilot: Automated code suggestions and completions directly in the IDE.
+  Claude/GPT: Code generation, debugging advice, and architectural suggestions.
 
 Rationale for AI Tools and Design Patterns:
-Copilot is integrated into the coding environment, giving real-time suggestions and reducing trivial coding tasks. Claude/GPT, conversely, excels at reasoning about complex code blocks, helping to restructure code, improve performance, or debug tricky issues. Their combined usage significantly reduced development time and improved code readability.
+  Copilot is integrated into the coding environment, giving real-time suggestions and reducing trivial coding tasks. Claude/GPT, conversely, excels at reasoning about complex code blocks, helping to restructure code, improve performance, or debug tricky issues. Their combined usage significantly reduced development time and improved code readability.
 
 Design Patterns:
 
