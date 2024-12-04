@@ -27,6 +27,13 @@ Document the design patterns used, their justification, visual evidence of their
 
 ## Testing Strategy, Execution, AI tool analysis (60 points):
 
+Overall, we took a two-pronged approach towards testing, splitting the testing across white-box and black-box both in methods and in purpose.
+We mainly employed blackbox testing for system testing, ensuring that every key functionality was still up and running after every merge. We specifically
+used decison table testing, a black-box testing method that uses a table to organize input combinations and their corresponding outcomes.
+It's a technique used to identify the correct test cases for systems with complex business rules. This was perfect for our project as there were
+very complex rules governing our logins, calendar, and booking system where both security and efficiency had to be balanced. After every merge 
+we tested the application once again to ensure nothing broke and the new changes were implemented smoothly. When this was not the case, we would roll 
+back the change and start over. 
 Elaborate on the Test Strategy, including whitebox and blackbox testing methods. List various tools used for testing and explain their purpose.
 Provide detailed test cases and their outcomes.
 Discuss the AI tools used in blackbox and whitebox testing.
