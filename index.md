@@ -69,7 +69,7 @@ MMF 4: Customer Dashboard
 ## Design (30 Points)
 Present architectural design diagrams.
 Explain your design decisions and their impact.
-![Alt text](relative%20./test.PNG?raw=true "Title")
+![alt text](./test.PNG)
 
 
 ## Design Patterns Implementation (30 points):
