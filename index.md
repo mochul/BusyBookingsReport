@@ -9,15 +9,15 @@ Technologies, Frameworks, and AI Tools:
 
   Frontend: React.
 
-  Backend: Node.js.
+  Backend: Node.js. 
 
-  Database: SQL.
+  Database: mySQL, Google Cloud Platform
 
   Version Control: GitHub.
 
 AI Tools Used: GitHub Copilot, Claude/GPT
 
-Rationale for AI Tools and Design Patterns: Copilot was useful because it was integrated into the coding environment and allowed to see various options for potential refactors and this helped us work faster. Claude/GPT o-1 preview helped us with code generation and reasoning when adding features. The combined usage of these two tools reduced development time and improved code readability.
+Rationale for AI Tools and Design Patterns: Copilot was useful because it was integrated into the coding environment and allowed to see various options for potential refactors and this helped us work faster. Claude/GPT o-1 preview helped us with code generation and reasoning when adding features. GPT was also useful for parsing error messages that were difficult to parse as a human. The ability to quickly sumarize problems was a great help in debugging. The combined usage of these two tools reduced development time and improved code readability.
 
 
 ## Requirements (20 Points):
@@ -26,7 +26,7 @@ Functional Requirements:
 
 User Registration and Authentication:
 
-Users can create accounts with unique usernames and passwords.
+  Users can create accounts with unique usernames and passwords.
   Users can log in based on their role (customer/business).
   The system must reject invalid credentials and maintain session security.
   
@@ -75,7 +75,7 @@ Document the design patterns used, their justification, visual evidence of their
 
 Design Patterns:
 
-Singleton Pattern: Makes sure there is a single instance of .  Thisprevents resource wastage and complexity.
+Singleton Pattern: Makes sure there is a single instance of .  This prevents resource wastage and complexity.
 Observer Pattern: Maintains a clear one-to-many relationship between components. For example, when a booking changes, observers (like the calendar UI and business dashboards) are automatically updated.
 Single Responsibility Principle: Ensures each module or class has one well-defined purpose, making code easier to test and refactor. This enhances scalability. 
 
@@ -95,7 +95,9 @@ very complex rules governing our logins, calendar, and booking system where both
 we tested the application once again to ensure nothing broke and the new changes were implemented smoothly. When this was not the case, we would roll 
 back the change and start over. 
 
-On the other hand, we mainly utilized unit testing for our whitebox testing. 
+On the other hand, we mainly utilized unit testing for our whitebox testing. This allowed for our integration testing to focus on integration as much as possible without being dragged down by easily foresseable bugs. This meant almost all of this testing for new code was done pre-merge. The database would be thouroughly tested in isolation, before being connected to the backend API. This was mostly done using ChatGPT and Claude to write out test querys, as well as make edge-case suggestions based on the already written code. Similarly, the backend Node.js API and frontend React interface were all tested in isolation through whitebox testing before being merged into the main project.
+
+Of our AI tools, some were better used for whitebox testing and some for blackbox. Claude was most useful in White-Box testing, as it was the best tool at writing new code and specific test cases. ChatGPT had a higher tendency to hallucinate when dealing directly with syntax. In contrast, ChatGPT was the better AI tool for blackbox testing, as it was better then Claude at understanding descriptions of functionality without code examples. It was consistantly better at identifying theoretical edge cases, then Claude.
 
 Elaborate on the Test Strategy, including whitebox and blackbox testing methods. List various tools used for testing and explain their purpose.
 Provide detailed test cases and their outcomes.
@@ -136,4 +138,5 @@ Integrate automated load testing tools and performance profiling guided by AI su
 | Team Member  | Contribution |
 | ------------- | ------------- |
 | Michael       | Testing, Introduction, Google Pages Setup   |
-| Ishaan       | Introduction, Software Technologies, Requirements, Future Directions, Challenges and Innovations   |
+| Ishaan        | Introduction, Software Technologies, Requirements, Future Directions, Challenges and Innovations   |
+| Vivien        | Software Technologies, Testing, Future Directions
