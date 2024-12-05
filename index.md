@@ -101,6 +101,9 @@ On the other hand, we mainly utilized unit testing for our whitebox testing. Thi
 
 Of our AI tools, some were better used for whitebox testing and some for blackbox. Claude was most useful in White-Box testing, as it was the best tool at writing new code and specific test cases. ChatGPT had a higher tendency to hallucinate when dealing directly with syntax. In contrast, ChatGPT was the better AI tool for blackbox testing, as it was better then Claude at understanding descriptions of functionality without code examples. It was consistantly better at identifying theoretical edge cases, then Claude.
 
+In terms of impact, AI streamlined the testing process a significant amount. Traditionally, it took us around a day or two to develop comprehensive tests, for 
+both black and white box. With AI, this was reduced to under a day, sometimes only an hour or two of prompting the agent and removing tests we deemed irrelevant.
+However, AI did have a blind spot in terms of spotting defects in the code. 
 Elaborate on the Test Strategy, including whitebox and blackbox testing methods. List various tools used for testing and explain their purpose.
 Provide detailed test cases and their outcomes.
 Discuss the AI tools used in blackbox and whitebox testing.
@@ -141,4 +144,4 @@ Integrate automated load testing tools and performance profiling guided by AI su
 | ------------- | ------------- |
 | Michael       | Testing, Introduction, Google Pages Setup   |
 | Ishaan        | Introduction, Software Technologies, Requirements, Future Directions, Challenges and Innovations   |
-| Vivien        | Software Technologies, Testing, Future Directions
+| Vivien        | Software Technologies, Testing, Future Directions |
