@@ -67,14 +67,19 @@ MMF 4: Customer Dashboard
    
 
 ## Design (30 Points)
-Present architectural design diagrams.
-Explain your design decisions and their impact.
-blah blah blah
+The architectural designs that we implemented were the singleton design pattern, the observer design pattern, the factory design pattern, and the strategy design pattern. However, we will only discuss the first three in this document.
+
 ![alt text](./images/ObserverDesignDiagram.PNG)
-blah blah blah
+
+First, we will take a look at the observer design pattern. As the diagram shows, it was specifically used for updating our calendars for when the bookings list was updated. This bookings list is instantiated upon a user logging in depending on whether they are a customer or business. Then, as bookings are created, the list is updated as well as pushed to the database. This also calls the notify() function which tells the calendars to update. This was extremely useful in keeping real time updates of the bookings for both types of users as well as that react can handle these updates instantly. 
+
 ![alt text](./images/SingletonDesignDiagram.PNG)
-blah blah blah
+
+Next, we will take a look at the singleton design pattern. As the diagram shows, it was only used for the dbConnector class, which was only accessed by our App class (the main logic unit of our application). The connector was accessed many different functions all which needed to update or get entries from the database. It greatly helped with keeping our connection stable and manageable as without the singleton class, multiple could have been created which may have broken a connection or would have been very hard to manage properly. It also helps when multiple users are using the application at once as all information goes through the single connection.
+
 ![alt text](./images/FactoryDesignDiagram.PNG)
+
+Finally, we will take a look at the factory design pattern. As the diagram shows, this was used for creating users at their instantiation. When a new user is made, we can call their respective factory to create a new user object with their information and then push that to the database. It was very useful with its intended purpose. Since we didn’t know what type of users we will be creating when the application is opened, it allowed us to have an easy way to do so. It allowed us to remove ambiguity from creating user logic. 
 
 
 ## Design Patterns Implementation (30 points):
