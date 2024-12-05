@@ -87,16 +87,12 @@ Document the design patterns used, their justification, visual evidence of their
 
 Design Patterns:
 
-Singleton Pattern: Makes sure there is only one single instance of each class.  This prevents resource wastage and complexity.
+  Singleton Pattern: Makes sure there is only one single instance of each class.  This prevents resource wastage and complexity, which greatly helped during development, and will help when multiple users are using the application. As we add more to the code base, it will keep the connector consistent throughout all of our updates. For our singleton object, we had db_connector.js implementing a single instance of the database connection, ensuring consistent and efficient management throughout the application.
 
-Observer Pattern: Notify multiple objects about any events that happen to the object they are observing. This enables a one-to-many dependency, where it is possible
-and even encouraged for multiple objects to base their behavior on an object while preventing tight coupling of any of the objects.  For example, when a booking changes, observers (like the calendar UI and business dashboards) are automatically updated.
-Single Responsibility Principle: Ensures each module or class has one well-defined purpose, making code easier to test and refactor. This enhances scalability. 
+  Observer Pattern: Notify multiple objects about any events that happen to the object they are observing. This enables a one-to-many dependency, where it is possible
+  and even encouraged for multiple objects to base their behavior on an object while preventing tight coupling of any of the objects.  For example, when a booking changes, observers (like business calendar and customer calendar) are automatically updated. React states are used here, enabling components like CreateBookingsPage.jsx and Calendar.js to automatically update in response to state changes.
 
-Singleton Principle: db_connector.js implements a single instance of the database connection, ensuring consistent and efficient management throughout the application.
-Observer Principle: React state and Context API are used, enabling components like CreateBookingsPage.jsx and Calendar.js to automatically update in response to state changes.
-
-SRP (Single Responsibility Principle): The modular structure in src/Components/ assigns each file a single, clearly defined responsibility, adhering to this principle
+  Factory Pattern: Allows for a superclass object and factory object where subclass objects of each can be created with new fields, inherienting the super class for ease of creation of new objects. Was used specifically for the user types, business and customer. When the App class creates a new user, it calls the respective factory class to create a new user, and then pushes that to the database. When users are pulled from the database, the respective factory class is called to create that user for usage throughout the application. This allowed for extremely easy creation of new users and will greatly help when expanding the application as we could expand this to bookings where new bookings go through a factory. This would also allow for new types of bookings to be made easily. Overall, the pattern allows for much better scalability as we expand the application.
 
 
 ## Testing Strategy, Execution, AI tool analysis (60 points):
