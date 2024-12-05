@@ -19,11 +19,6 @@ AI Tools Used: GitHub Copilot, Claude/GPT
 
 Rationale for AI Tools and Design Patterns: Copilot was useful because it was integrated into the coding environment and allowed to see various options for potential refactors and this helped us work faster. Claude/GPT o-1 preview helped us with code generation and reasoning when adding features. The combined usage of these two tools reduced development time and improved code readability.
 
-Design Patterns:
-
-Singleton Pattern: Makes sure there is a single instance of .  Thisprevents resource wastage and complexity.
-Observer Pattern: Maintains a clear one-to-many relationship between components. For example, when a booking changes, observers (like the calendar UI and business dashboards) are automatically updated.
-Single Responsibility Principle: Ensures each module or class has one well-defined purpose, making code easier to test and refactor. This enhances scalability. 
 
 ## Requirements (20 Points):
 
@@ -56,10 +51,7 @@ Non-Functional Requirements:
 
  - BusyBookings should allow customers and business owners to locate businesses, create bookings, and manage their profiles.
 
-   Singleton Principle: db_connector.js implements a single instance of the database connection, ensuring consistent and efficient management throughout the application.
-   Observer Principle: React state and Context API are used, enabling components like CreateBookingsPage.jsx and Calendar.js to automatically update in response to state changes.
-   SRP (Single Responsibility Principle): The modular structure in src/Components/ assigns each file a single, clearly defined responsibility, adhering to this principle
-
+  
 MMF 1: Business Onboarding and Profile Management
 	•	Description: Enable business admins to register their businesses, create profiles, and specify services and availability. Allow  businesses to onboard themselves and populate the platform with offerings and make it functional for customers.	
 
@@ -74,11 +66,24 @@ MMF 4: Customer Dashboard
 
    
 
-Design (30 Points)
+## Design (30 Points)
 Present architectural design diagrams.
 Explain your design decisions and their impact.
-Design Patterns Implementation (30 points):
+
+## Design Patterns Implementation (30 points):
 Document the design patterns used, their justification, visual evidence of their usage, and their impact on the project’s structure and maintainability.
+
+Design Patterns:
+
+Singleton Pattern: Makes sure there is a single instance of .  Thisprevents resource wastage and complexity.
+Observer Pattern: Maintains a clear one-to-many relationship between components. For example, when a booking changes, observers (like the calendar UI and business dashboards) are automatically updated.
+Single Responsibility Principle: Ensures each module or class has one well-defined purpose, making code easier to test and refactor. This enhances scalability. 
+
+ Singleton Principle: db_connector.js implements a single instance of the database connection, ensuring consistent and efficient management throughout the application.
+   Observer Principle: React state and Context API are used, enabling components like CreateBookingsPage.jsx and Calendar.js to automatically update in response to state changes.
+   SRP (Single Responsibility Principle): The modular structure in src/Components/ assigns each file a single, clearly defined responsibility, adhering to this principle
+
+
 
 ## Testing Strategy, Execution, AI tool analysis (60 points):
 
