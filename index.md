@@ -83,7 +83,6 @@ Finally, we will take a look at the factory design pattern. As the diagram shows
 
 
 ## Design Patterns Implementation (30 points):
-Document the design patterns used, their justification, visual evidence of their usage, and their impact on the project’s structure and maintainability.
 
 Design Patterns:
 
