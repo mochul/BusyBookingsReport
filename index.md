@@ -161,4 +161,5 @@ Integrate automated load testing tools and performance profiling guided by AI su
 | Michael      | Testing, Introduction, Design Patterns, Google Pages Setup                                   |
 | Ishaan       | Introduction, Software Technologies, Requirements, Future Directions, Challenges and Innovations |
 | Vivien       | Software Technologies, Testing, Future Directions                          |
+| Mattias      | Design, Design Patterns Implementation, Challenges and Innovations     |
 
