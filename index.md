@@ -135,5 +135,5 @@ Integrate automated load testing tools and performance profiling guided by AI su
 ## Contributions
 | Team Member  | Contribution |
 | ------------- | ------------- |
-| Michael       | Testing   |
+| Michael       | Testing, Introduction, Google Pages Setup   |
 | Ishaan       | Introduction, Software Technologies, Requirements, Future Directions, Challenges and Innovations   |
