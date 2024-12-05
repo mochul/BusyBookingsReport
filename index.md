@@ -140,8 +140,10 @@ Implement reminders and notifications through SMS or email, further automating t
 Integrate automated load testing tools and performance profiling guided by AI suggestions.
 
 ## Contributions
-| Team Member  | Contribution |
-| ------------- | ------------- |
-| Michael       | Testing, Introduction, Google Pages Setup   |
-| Ishaan        | Introduction, Software Technologies, Requirements, Future Directions, Challenges and Innovations   |
-| Vivien        | Software Technologies, Testing, Future Directions |
+
+| Team Member  | Contribution                                                                 |
+|--------------|------------------------------------------------------------------------------|
+| Michael      | Testing, Introduction, Google Pages Setup                                   |
+| Ishaan       | Introduction, Software Technologies, Requirements, Future Directions, Challenges and Innovations |
+| Vivien       | Software Technologies, Testing, Future Directions                          |
+
