@@ -77,14 +77,16 @@ Document the design patterns used, their justification, visual evidence of their
 
 Design Patterns:
 
-Singleton Pattern: Makes sure there is a single instance of .  This prevents resource wastage and complexity.
-Observer Pattern: Maintains a clear one-to-many relationship between components. For example, when a booking changes, observers (like the calendar UI and business dashboards) are automatically updated.
+Singleton Pattern: Makes sure there is only one single instance of each class.  This prevents resource wastage and complexity.
+
+Observer Pattern: Notify multiple objects about any events that happen to the object they are observing. This enables a one-to-many dependency, where it is possible
+and even encouraged for multiple objects to base their behavior on an object while preventing tight coupling of any of the objects.  For example, when a booking changes, observers (like the calendar UI and business dashboards) are automatically updated.
 Single Responsibility Principle: Ensures each module or class has one well-defined purpose, making code easier to test and refactor. This enhances scalability. 
 
- Singleton Principle: db_connector.js implements a single instance of the database connection, ensuring consistent and efficient management throughout the application.
-   Observer Principle: React state and Context API are used, enabling components like CreateBookingsPage.jsx and Calendar.js to automatically update in response to state changes.
-   SRP (Single Responsibility Principle): The modular structure in src/Components/ assigns each file a single, clearly defined responsibility, adhering to this principle
+Singleton Principle: db_connector.js implements a single instance of the database connection, ensuring consistent and efficient management throughout the application.
+Observer Principle: React state and Context API are used, enabling components like CreateBookingsPage.jsx and Calendar.js to automatically update in response to state changes.
 
+SRP (Single Responsibility Principle): The modular structure in src/Components/ assigns each file a single, clearly defined responsibility, adhering to this principle
 
 
 ## Testing Strategy, Execution, AI tool analysis (60 points):
@@ -146,7 +148,7 @@ Integrate automated load testing tools and performance profiling guided by AI su
 
 | Team Member  | Contribution                                                                 |
 |--------------|------------------------------------------------------------------------------|
-| Michael      | Testing, Introduction, Google Pages Setup                                   |
+| Michael      | Testing, Introduction, Design Patterns, Google Pages Setup                                   |
 | Ishaan       | Introduction, Software Technologies, Requirements, Future Directions, Challenges and Innovations |
 | Vivien       | Software Technologies, Testing, Future Directions                          |
 
